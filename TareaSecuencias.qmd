@@ -1,0 +1,75 @@
+---
+title: "TareaSecuenciación"
+format: pdf
+editor: visual
+---
+
+# Secuenciación:
+
+## Actividad 1: Documentar en Github:
+
+Entrar a Google académico y buscar:
+
+-   “Sanger sequencing”
+
+    -   624,000 resultados
+
+-   “Illumina Sequencing”
+
+    -   634,000 resultados
+
+-   “Ion Torrent sequencing”
+
+    -   66,500 resultados
+
+-   “PacBio sequencing”
+
+    -   77,600 resultados
+
+-   “Oxford Nanopore sequencing"
+
+    -   87,000 resultados
+
+Illumina y Sanger son las dos más utilizadas.
+
+Total de artículos: 1,489,100
+
+Porcentaje por método de secuenciación:
+
+-   Sanger: 41.9%
+
+-   Illumina:42.5%
+
+-   Ion Torrent: 4.4%
+
+-   PacBio: 5.2%
+
+-   Oxford Nanopore: 5.8%
+
+Ninguna tecnología tiene el 100% de confiabilidad.
+
+# Práctica para entender Sanger e Illumina:
+
+![](images/clipboard-3659363235.jpeg)
+
+![](images/clipboard-506475233.jpeg)
+
+![](images/clipboard-325511510.jpeg)
+
+![](images/clipboard-1667083980.jpeg)
+
+![](images/clipboard-2767836376.png)
+
+![](images/clipboard-1756003236.png)
+
+![](images/clipboard-1028804665.png)
+
+![](images/clipboard-3661296014.png)
+
+![](images/clipboard-2741257854.png)
+
+![](images/clipboard-4237514265.png)
+
+# Actividad: Identificación de valores de calidad de secuencias.
+
+![](images/clipboard-2883294098.png)
