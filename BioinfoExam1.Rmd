@@ -1,0 +1,299 @@
+---
+title: "Examen 1 Bioinfo"
+author: "Fernanda Ximena Venegas García"
+date: "2026-10-10"
+output: pdf_document
+lang: es
+---
+
+# Introducción.
+
+El objetivo del proyecto/examen es poder descargar las secuencias de un Bioproject obtenidas directamente de la página de NCBI, con la intención de analizarlas por medio de comandos de Bash y usando Jobs para esta labor.
+
+El BioProject que usaremos es el siguiente: **PRJNA268110**. que corresponde a secuencias de Saccharomyces cerevisiae.
+
+# Contexto biológico.
+
+Organismo estudiado: Saccharomyces cerevisiae (levadura de cerveza)
+
+Cepa (Strain): WFA73
+
+Objetivo del estudio: Determinar si las horquillas de replicación con huecos de DNA monocatenario tienen la misma probabilidad de producir rupturas de doble cadena.
+
+Responsables del estudio: Wenyi Feng, Biochemistry and Molecular Biology, SUNY Upstate Medical University
+
+Fecha aproximada de publicación de datos: 20-Nov-2014
+
+# Objetivo del estudio.
+
+El objetivo del estudio o pregunta a responder es si las horquillas de replicación que tienen huecos de DNA monocatenario tienen la misma probabilidad de producir rupturas de doble cadena cuando intentan rehacerse de exposición a la Hidroxiurea.
+
+# Datos y metodología.
+
+-   Genoma de referencia (`GCF_000146045.2)`
+
+-   Organismo modelo: Saccharomyces Cerevisiae
+
+-   Datos de NCBI públicos
+
+# Fuentes de datos.
+
+Bioproject: PRJNA268110
+
+\| BioSample \| SRA Study \|
+
+\|-----------------------------------\|
+
+\| SAMN03203061 \| SRP050091 \|
+
+\| SAMN03203063 \| SRP050091 \|
+
+\| SAMN03203066 \| SRP050091 \|
+
+\| SAMN03203053 \| SRP050091 \|
+
+\| SAMN03203062 \| SRP050091 \|
+
+\| SAMN03203059 \| SRP050091 \|
+
+\| SAMN03203067 \| SRP050091 \|
+
+\| SAMN03203068 \| SRP050091 \|
+
+\| SRA Run \| Experiment \| Tipo de Secuenciacion \| Paired/Single \|
+
+\|———————————————————————————————————-\|
+
+\| SRR1658454 \| SRX764815 \| Illumina MiSeq \| Paired \|
+
+\| SRR1658455 \| SRX764816 \| Illumina MiSeq \| Paired \|
+
+\| SRR1658456 \| SRX764817 \| Illumina MiSeq \| Paired \|
+
+\| SRR1658457 \| SRX764818 \| Illumina MiSeq \| Paired \|
+
+\| SRR1658458 \| SRX764819 \| Illumina MiSeq \| Paired \|
+
+\| SRR1658459 \| SRX764820 \| Illumina MiSeq \| Paired \|
+
+\| SRR1658460 \| SRX764821 \| Illumina MiSeq \| Paired \|
+
+\| SRR1658461 \| SRX764822 \| Illumina Miseq \| Paired \|
+
+Plataforma de secuenciamiento: Illumina
+
+Tecnología usada: Illumina MiSeq
+
+Formato de archivos: fastq, fastqc.html, fastqc.zip,
+
+### Información del genoma ensamblado:
+
+Nombre del ensamblado: Saccharomyces Cerevisiae S288C, R64
+
+Organismo: Saccharomyces Cerevisiae (Levadura)
+
+Numero de Accession: GCF_000146045.2
+
+Numero de cromosomas: 17
+
+Tamaño del genoma: 12.1 mb
+
+# BioProject/BioSample/SRA.
+
+-   Bioproject: Agrupa todo el estudio, los datos usados en la investigación, los resultados (si ya hay), publicaciones, etc.
+
+-   BioSample: Es la muestra que se extrajo para estudiar
+
+-   SRA Experiment: Muestra como se preparó el dataset y el diseño experimental que se llevó a cabo.
+
+-   SRA Run: Contiene los datos crudos
+
+# Datos descargados.
+
+Número de archivos descargados: 56 (ls -1 \| wc -l)
+
+## Tamaño de cada archivo (Mb o Gb): Hay muchos archivos que son de K
+
+(du -h \*)
+
+261M SRR1658454
+
+741M SRR1658454_1.fastq
+
+876K SRR1658454_1_fastqc.html
+
+496K SRR1658454_1_fastqc.zip
+
+740M SRR1658454_2.fastq
+
+940K SRR1658454_2_fastqc.html
+
+612K SRR1658454_2_fastqc.zip
+
+449M SRR1658455_1.fastq
+
+888K SRR1658455_1_fastqc.html
+
+512K SRR1658455_1_fastqc.zip
+
+449M SRR1658455_2.fastq
+
+944K SRR1658455_2_fastqc.html
+
+620K SRR1658455_2_fastqc.zip
+
+185M SRR1658456
+
+522M SRR1658456_1.fastq
+
+900K SRR1658456_1_fastqc.html
+
+540K SRR1658456_1_fastqc.zip
+
+522M SRR1658456_2.fastq
+
+884K SRR1658456_2_fastqc.html
+
+520K SRR1658456_2_fastqc.zip
+
+342M SRR1658457
+
+960M SRR1658457_1.fastq
+
+876K SRR1658457_1_fastqc.html
+
+500K SRR1658457_1_fastqc.zip
+
+960M SRR1658457_2.fastq
+
+980K SRR1658457_2_fastqc.html
+
+684K SRR1658457_2_fastqc.zip
+
+461M SRR1658458
+
+1.3G SRR1658458_1.fastq
+
+880K SRR1658458_1_fastqc.html
+
+500K SRR1658458_1_fastqc.zip
+
+1.3G SRR1658458_2.fastq
+
+960K SRR1658458_2_fastqc.html
+
+640K SRR1658458_2_fastqc.zip
+
+308M SRR1658459
+
+870M SRR1658459_1.fastq
+
+872K SRR1658459_1_fastqc.html
+
+488K SRR1658459_1_fastqc.zip
+
+870M SRR1658459_2.fastq
+
+928K SRR1658459_2_fastqc.html
+
+584K SRR1658459_2_fastqc.zip
+
+255M SRR1658460
+
+715M SRR1658460_1.fastq
+
+880K SRR1658460_1_fastqc.html
+
+504K SRR1658460_1_fastqc.zip
+
+714M SRR1658460_2.fastq
+
+952K SRR1658460_2_fastqc.html
+
+632K SRR1658460_2_fastqc.zip
+
+380M SRR1658461
+
+1.1G SRR1658461_1.fastq
+
+868K SRR1658461_1_fastqc.html
+
+480K SRR1658461_1_fastqc.zip
+
+1.1G SRR1658461_2.fastq
+
+912K SRR1658461_2_fastqc.html
+
+572K SRR1658461_2_fastqc.zip
+
+## Número de secuencias:
+
+(grep -c "\@SRR" \*.fastq)
+
+SRR1658454_1.fastq:3438388
+
+SRR1658454_2.fastq:3438388
+
+SRR1658455_1.fastq:2090805
+
+SRR1658455_2.fastq:2090805
+
+SRR1658456_1.fastq:2428934
+
+SRR1658456_2.fastq:2428934
+
+SRR1658457_1.fastq:4452257
+
+SRR1658457_2.fastq:4452257
+
+SRR1658458_1.fastq:6080904
+
+SRR1658458_2.fastq:6080904
+
+SRR1658459_1.fastq:4037197
+
+SRR1658459_2.fastq:4037197
+
+SRR1658460_1.fastq:3317701
+
+SRR1658460_2.fastq:3317701
+
+SRR1658461_1.fastq:4961938
+
+SRR1658461_2.fastq:4961938
+
+Reads: **6,080,90**
+
+# Longitud promedio de las lecturas:
+
+75 pb (head -n 20 SRR1658458_1.fastq), todas son paired-end
+
+## Lineas y lecturas crudas.
+
+Ejemplo (head -n 20 SRR1658458_1.fastq):
+
+\@SRR1658458.1 1 length=75 \<- Identificador
+
+CTTTCTCTTTCAGCCTTTAACTTGTCCAAAACCCAACCGTACTTTCACCCTCCCTTACCTTCTTCATCTTCTTCC \<- Secuencia
+
++SRR1658458.1 1 length=75 \<- Separador dentro de la secuencia.
+
+8ABC\@\@\<FEFD9,66EEE9AFFE6EFCCF\<,;\@6,,,8+8,,:\@,,,,,,,:66C\@8CCF,,;;C,,;,,6;;66 \<- Contiene los valores de calidad de secuenciación 
+
+# Herramientas utilizadas.
+
+-   NCBI BioProject
+
+-   NCBI BioSample
+
+-   NCBI Run Selector
+
+-   Servidor Ken
+
+-   Terminal de linux/bash
+
+# Resumen.
+
+Se analizaron secuencias de Saccharomyces Cerevisiae por medio d ebases de datos públicas (NCBI), en las cuales encontramos los datos más importantes con respecto a las secuencias y a la calidad de las mismas para este BioProject que fue usado para llevar a cabo el examen/proyecto.
+
+Entre algunas cosas que se ven al usar los comandos de Bash es la longitud promedio d elas lecturas (75), el peso de cada archivo, el cual es importante conocer antes de empezar a manipular todo, pues podría haber archivos demasiado pesados o que tu computadora no logre visualizar bien o lo hará, de momento, debemos buscar optimizar y ahorrar recursos que pueden llegar a ser valiosos después.
